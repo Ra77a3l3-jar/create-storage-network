@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "create-storage-network",
+	"version": "${version}",
+	"name": "Create Storage Network",
+	"description": "This mod adds a network system to the create storage mod made by Foxy No Tails ",
+	"authors": [
+		"Ra77a3l3"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/create-storage-network/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.ra77a3l3.createstorage.CreateStorageNetwork"
+		],
+		"client": [
+			"net.ra77a3l3.createstorage.CreateStorageNetworkClient"
+		],
+		"fabric-datagen": [
+			"net.ra77a3l3.createstorage.CreateStorageNetworkDataGenerator"
+		]
+	},
+	"mixins": [
+		"create-storage-network.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
