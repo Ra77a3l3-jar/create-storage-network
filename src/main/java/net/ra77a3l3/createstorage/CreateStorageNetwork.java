@@ -14,4 +14,3 @@ public class CreateStorageNetwork implements ModInitializer {
 		LOGGER.info("Hello Fabric world!");
 	}
 }
-i learned how to use git repoitories
