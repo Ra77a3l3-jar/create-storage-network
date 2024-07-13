@@ -2,6 +2,7 @@ package net.ra77a3l3.createstorage;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.ra77a3l3.createstorage.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -11,6 +12,7 @@ public class CreateStorageNetwork implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		LOGGER.info("Hello Fabric world!");
+
+		ModItems.registerModItems();
 	}
 }
